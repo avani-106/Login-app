@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<h1>home page</h1>
+{{request.session.email_session}}
+{{request.session.password_session}} 
+
+<form method="POST" action="logout">
+{% csrf_token %}
+<input type="submit" value="logout">
+
+
+</form>
+</body>
+</html>

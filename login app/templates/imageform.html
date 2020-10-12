@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+</head>
+
+<body>
+
+<form method="post" action="upload" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Enter Name</label>
+    <input type="text" name="name">
+    <br><br>
+
+    <label>Choose File</label>
+    <input type="file" name="img">
+    <br><br>
+
+    <input type="submit">
+</form>
+</body>
+</html>

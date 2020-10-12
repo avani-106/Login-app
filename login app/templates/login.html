@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<form method="POST" action="verify">
+{% csrf_token %}
+<input type="text" placeholder="enter email" name="email" value="{{email_cookie}}">
+<input type="text" placeholder="enter password" name="password" value="{{password_cookie}}">
+
+<input type="checkbox" name="cb">
+<label>Remember Me</label>
+<input type="submit" value="login">
+</form>
+</body>
+</html>
